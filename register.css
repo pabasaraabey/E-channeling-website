@@ -1,0 +1,88 @@
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #7a7a7a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main {
+  background: #333;
+  padding: 25px;
+  border-radius: 10px;
+  width: 450px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #ff7200;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.form label {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.input, .textarea, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.textarea {
+  height: 80px;
+  resize: none;
+}
+
+.custom_select {
+  position: relative;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  background: #ff7200;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background: white;
+  color: #ff7200;
+}
+
+@media (max-width: 480px) {
+  .main {
+      width: 90%;
+  }
+}
